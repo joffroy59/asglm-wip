@@ -1,0 +1,19 @@
+on:
+  push:
+    branches: [ "wip/helix" ]
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp.cluster015.ovh.net
+        username: asglm
+        password: ${{ secrets.ftp_password }}
+        server-dir: ./www-wip-helix/

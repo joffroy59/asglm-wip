@@ -14,6 +14,40 @@
 # For syntax checking, see:
 # http://tool.motoricerca.info/robots-checker.phtml
 
+#block Bad Robots
+User-agent: SCspider
+Disallow: /
+
+User-agent: test-bot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AmazonBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: DuckDuckGo
+Disallow: /
+
+User-agent: Buck
+Disallow: /
+
 User-agent: *
 Disallow: /administrator/
 Disallow: /bin/

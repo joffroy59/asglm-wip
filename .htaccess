@@ -170,3 +170,11 @@ Options -Indexes
 		Header append Vary Accept-Encoding
 	</FilesMatch>
 </IfModule>
+
+# block visitors referred from indicated domains
+<IfModule mod_rewrite.c>
+SetEnvIfNoCase ^User-Agent$ .*(SCspider|test-bot|MJ12bot|AhrefsBot|DotBot|bingbot|SemrushBot|AmazonBot|Bytespider|DuckDuckGo|Buck) HTTP_SAFE_BADBOT
+Deny from env=HTTP_SAFE_BADBOT
+</ifModule>
+deny from 100.21.24.205 44.230.252.91 52.25.208.208
+deny from 47.128

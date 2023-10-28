@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'joomshaper/helixultimate',
+        'pretty_version' => '2.0.15.x-dev',
+        'version' => '2.0.15.9999999-dev',
+        'reference' => '47d9e7a12dd04de429124f7731dc1f0ea0f1d12b',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'joomshaper/helixultimate' => array(
+            'pretty_version' => '2.0.15.x-dev',
+            'version' => '2.0.15.9999999-dev',
+            'reference' => '47d9e7a12dd04de429124f7731dc1f0ea0f1d12b',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'scssphp/scssphp' => array(
+            'pretty_version' => 'v1.11.1',
+            'version' => '1.11.1.0',
+            'reference' => 'ace2503684bab0dcc817d7614c8a54b865122414',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../scssphp/scssphp',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'tedivm/jshrink' => array(
+            'pretty_version' => 'v1.7.0',
+            'version' => '1.7.0.0',
+            'reference' => '7a35f5a4651ca2ce77295eb8a3b4e133ba47e19e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../tedivm/jshrink',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
